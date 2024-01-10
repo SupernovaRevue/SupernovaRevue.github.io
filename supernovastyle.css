@@ -1,8 +1,3 @@
-body {
-    background-color: #F8F9FA;
-}
-
-
 @font-face {
     font-family: 'supernovaStyleFont';
     src: url('./image/Optical\ A\ Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
@@ -10,8 +5,55 @@ body {
   
 .supernova-font {
     font-family: 'supernovaStyleFont', Fallback, sans-serif;
-  }
+}
 
 .text-red {
     color: #FF1800;
 }
+
+body {
+    background-color: #F8F9FA;
+}
+
+.flag-icon-background, .flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.flag-icon {
+  position: relative;
+  display: inline-block;
+  width: 1.3333333333em;
+  line-height: 1em;
+}
+.flag-icon:before {
+    content: " ";
+}
+.flag-icon.flag-icon-squared {
+    width: 1em;
+}
+
+.flag-icon-fra {
+    background-image: url(./lib/flag-icons-master/flags/4x3/fra.svg);
+}
+.flag-icon-fra.flag-icon-squared {
+    background-image: url(./lib/flag-icons-master/flags/1x1/fra.svg);
+}
+
+.flag-icon-gbr {
+    background-image: url(./lib/flag-icons-master/flags/4x3/gbr.svg);
+}
+.flag-icon-gbr.flag-icon-squared {
+    background-image: url(./lib/flag-icons-master/flags/1x1/gbr.svg);
+}
+
+
+.flag-icon-ita {
+    background-image: url(./lib/flag-icons-master/flags/4x3/ita.svg);
+}
+.flag-icon-ita.flag-icon-squared {
+    background-image: url(./lib/flag-icons-master/flags/1x1/ita.svg);
+}
+  
+
