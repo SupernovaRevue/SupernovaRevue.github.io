@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Supernova</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4fcd49ebb1.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+    <link rel="stylesheet" href="supernovastyle.css">
+  </head>
+
+  <body>
+    <div w3-include-html="./common/header.html"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+    <div class="container text-center">
+      <div class="row">
+        <h1>Revue</h1>
+        <div class="col-lg-4 sm-6">
+          <div class="card">
+            <div class="card-header bg-transparent border-success fst-italic text-end">3 septembre 2023</div>
+            <img src="./image/supernova_couv_4.jpg" class="card-img-top" alt="Athena sur terre, l'impérialisme français, l'opression desfemmes,et l'Ukraine est le monde">
+            <div class="card-body">
+              <h4 class="card-title">Supernova 4</h4>
+              <p class="card-text">
+            </div>
+            <div class="card-footer bg-transparent border-success fst-italic">Téléchager la revue <a href="./article/pdf/supernova_04.pdf"><i class="fa-regular fa-file-pdf"></i></a></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 sm-6">
+          <div class="card">
+            <div class="card-header bg-transparent border-success fst-italic text-end">22 mars 2023</div>
+            <img src="./image/supernova_couv_3.jpg" class="card-img-top" alt="Jungle métorpolitaine, Naxalites urbains, la banlieue est au centre, et machines et plus-value">
+            <div class="card-body">
+              <h4 class="card-title">Supernova 3</h4>
+              <p class="card-text"> 
+            </div>
+            <div class="card-footer bg-transparent border-success fst-italic">Téléchager la revue <a href="./article/pdf/supernova_03.pdf"><i class="fa-regular fa-file-pdf"></i></a></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 sm-6">
+          <div class="card">
+            <div class="card-header bg-transparent border-success fst-italic text-end">25 novembre 2022</div>
+            <img src="./image/supernova_couv_2.jpg" class="card-img-top" alt="Processus révolutionaire, théorie du reflet, la lutte dans la logistique en Italie et autonomie ouvrière à Marseille">
+            <div class="card-body">
+              <h4 class="card-title">Supernova 2</h4> 
+              <p class="card-text"> 
+            </div>
+            <div class="card-footer bg-transparent border-success fst-italic">Téléchager la revue <a href="./article/pdf/supernova_02.pdf"><i class="fa-regular fa-file-pdf"></i></a></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 sm-6">
+          <div class="card">
+            <div class="card-header bg-transparent border-success fst-italic text-end">29 août 2022</div>
+            <img src="./image/supernova_couv_1.jpg" class="card-img-top" alt="Autonomie ouvrière et new unionism aux Etats-Unis">
+            <div class="card-body">
+              <h4 class="card-title">Supernova 1</h4>
+              <p class="card-text"> 
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-success fst-italic">Téléchager la revue <a href="./article/pdf/supernova_01.pdf"><i class="fa-regular fa-file-pdf"></i></a></div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    
+    <div w3-include-html="./common/footer.html"></div> 
+  </body>
+
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    includeHTML();
+    </script> 
+</html>
