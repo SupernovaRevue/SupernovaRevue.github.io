@@ -2,6 +2,16 @@ body {
     background-color: #F8F9FA;
 }
 
+
+@font-face {
+    font-family: 'supernovaStyleFont';
+    src: url('./image/Optical\ A\ Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+  
+.supernova-font {
+    font-family: 'supernovaStyleFont', Fallback, sans-serif;
+  }
+
 .text-red {
     color: #FF1800;
 }
