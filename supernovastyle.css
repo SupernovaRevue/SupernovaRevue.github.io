@@ -25,6 +25,7 @@ body {
 
 .table-of-content {
     padding: 0;
+    padding-bottom: 3px;
     list-style: none;
     text-decoration: none;
 }
@@ -32,6 +33,12 @@ body {
 .table-of-content-item {
     color: #FF1800;
     text-decoration: none;
+}
+
+.table-of-content-item-disabled {
+    color: #c7c7c7;
+    text-decoration: none;
+    pointer-events: none;
 }
 
 .table-of-content-item:hover {
