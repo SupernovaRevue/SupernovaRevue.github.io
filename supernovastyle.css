@@ -25,9 +25,13 @@ body {
 
 .table-of-content {
     padding: 0;
-    padding-bottom: 3px;
     list-style: none;
     text-decoration: none;
+}
+
+.table-of-content-elem {
+    padding: 0;
+    padding-bottom: 3px;
 }
 
 .table-of-content-item {
