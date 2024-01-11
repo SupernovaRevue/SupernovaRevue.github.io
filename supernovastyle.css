@@ -11,6 +11,10 @@
     color: #FF1800;
 }
 
+.text-white {
+    color: #f0f0f0;
+}
+
 /* Changing img holder position, so the overlay will be related to it */
 
 .card-image {
@@ -30,7 +34,7 @@
     background: rgba(0, 0, 0, 0.7);
 }
   
-.card:hover .image-overlay {
+.card-image:hover .image-overlay {
     opacity: 1;
 }
 
