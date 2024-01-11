@@ -53,7 +53,7 @@ body {
   }
   
 .image-overlay {
-    pointer-events: none;
+    visibility: collapse;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -61,14 +61,12 @@ body {
     right: 0;
     height: 100%;
     width: 100%;
-    opacity: 0;
     transition: .8s ease;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.8);
 }
   
 .overlay-zone:hover .image-overlay, .overlay-zone:active .image-overlay, .overlay-zone:focus .image-overlay {
-    pointer-events: auto;
-    opacity: 1;
+    visibility: visible;
 }
 
 .flag-icon-background, .flag-icon {
