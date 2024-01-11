@@ -32,7 +32,6 @@ body {
 .table-of-content-item {
     color: #FF1800;
     text-decoration: none;
-    padding-bottom: 4px;
 }
 
 .table-of-content-item:hover {
