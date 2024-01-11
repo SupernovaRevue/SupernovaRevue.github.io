@@ -53,6 +53,7 @@ body {
   }
   
 .image-overlay {
+    pointer-events: none;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -66,6 +67,7 @@ body {
 }
   
 .overlay-zone:hover .image-overlay, .overlay-zone:active .image-overlay, .overlay-zone:focus .image-overlay {
+    pointer-events: auto;
     opacity: 1;
 }
 
