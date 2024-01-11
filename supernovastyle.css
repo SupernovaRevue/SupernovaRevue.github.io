@@ -23,15 +23,16 @@ body {
     color: #f0f0f0;
 }
 
-.table-of-content-item {
-    color: #FF1800;
-    text-decoration: none;
-}
-
 .table-of-content {
     padding: 0;
     list-style: none;
     text-decoration: none;
+}
+
+.table-of-content-item {
+    color: #FF1800;
+    text-decoration: none;
+    padding-bottom: 4px;
 }
 
 .table-of-content-item:hover {
