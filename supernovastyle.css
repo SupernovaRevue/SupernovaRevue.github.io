@@ -65,7 +65,7 @@ body {
     background: rgba(0, 0, 0, 0.75);
 }
   
-.overlay-zone:hover, .overlay-zone:active, .overlay-zone:focus .image-overlay {
+.overlay-zone:hover .image-overlay, .overlay-zone:active .image-overlay, .overlay-zone:focus .image-overlay {
     opacity: 1;
 }
 
