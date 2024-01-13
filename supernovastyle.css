@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'supernovaStyleFont';
-    src: url('./image/Optical\ A\ Bold.ttf')  format('truetype'),
+    src: url('/image/Optical\ A\ Bold.ttf')  format('truetype'),
   }
   
 .supernova-font {
