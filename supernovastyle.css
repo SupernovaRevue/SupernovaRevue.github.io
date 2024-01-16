@@ -68,7 +68,8 @@ body {
   }
 
 .carousel-bg-dark {
-    pointer-events: none;
+    height: 100%;
+    width: 100%;
     background: rgba(0, 0, 0, 0.7);
 }
   
