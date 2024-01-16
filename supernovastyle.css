@@ -66,7 +66,13 @@ body {
 .card-image {
     position: relative;
   }
+
+.carousel-bg-dark {
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.8);
+}
   
+
 .image-overlay {
     pointer-events: visible;
     visibility: collapse;
