@@ -65,7 +65,10 @@ body {
 
 .card-image {
     position: relative;
-  }
+}
+.card-body-scrollable{
+    scroll-behavior: smooth;   
+}
 
 .carousel-bg-dark:after {
     content:"";
